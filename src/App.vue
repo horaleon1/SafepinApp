@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    
+    hola marta
   </div>
 </template>
 
