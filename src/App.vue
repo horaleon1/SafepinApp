@@ -1,12 +1,12 @@
 <template>
   <div id="app">
     <Navbar></Navbar>
-    <Status></Status>
-    <!-- <h1>¿Cual es tu estado actual?</h1>
+    <!-- <Status></Status> -->
+     <h1>¿Cual es tu estado actual?</h1>
     <Principal ></Principal>
     <Problem></Problem>
     <a href>Ver mapa de zona</a>
-    <img src="./assets/logo.svg" alt width="45px" height="45px" />-->
+    <img src="./assets/logo.svg" alt width="45px" height="45px">
  
   </div>
 </template>
@@ -61,7 +61,7 @@ a {
 }
 img {
   position: absolute;
-  top: 0.65%;
+  top: 1.5%;
   left: 42%;
 }
 </style>

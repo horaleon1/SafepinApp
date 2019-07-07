@@ -1,54 +1,54 @@
 <template>
-  <nav class="navbar navbar-expand-lg navbar-light" style="background-color:#9D80FF">
-    <a class="navbar-brand img" href="#"></a>
-    <button
-      class="navbar-toggler pull-left"
-      type="button"
-      data-toggle="collapse"
-      data-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
-      <span class="navbar-toggler-icon"></span>
-    </button>
+<div class = "principal" >
+<!-- <img src="../assets/logo.svg" alt="Logo SafePin " class="img"> -->
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">
-            Home
-            <span class="sr-only">(current)</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#">Disabled</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
+<!-- @click="sidebar = !sidebar" v-bind:class ="{sidebar:sidebar}" -->
+<div  class ="img2" @click="sidebar">
+</div>
+
+ </div>
 </template>
 
 <script>
 export default {
   name:'Navbar',
+  data (){
+   sidebar:false;
+  },
+  methods:{
+   sidebar(){
+    return this.background-color +white;
+   }
+  }
 };
 </script>
 
 <style scoped>
-.logo {
-  width: 80px;
-  height: 80px;
-}
-#navbar2 {
-  background-color: #9d80ff;
-}
+
+
 .img {
-  background-image: url("/Users/Horace/tiembapp/src/assets/logo.svg");
-  height: 50px;
-  width: 50px;
+  margin-top:2%;
+  margin-left: 2.5%;
+  height: 40px;
+  width: 40px;
 }
+.img2{
+  position:absolute;
+  left: 89%;
+  top: 3.5%;
+  background: url("../assets/menu-2.svg") no-repeat;
+  height: 45px;
+  width:45px;
+}
+
+div{
+  height: 65px;
+  background-color: #9d80ff;
+  width: 100%;
+}
+ .sidebar{
+height: 812px;
+width:700px;
+background-color:white;
+} 
 </style>
