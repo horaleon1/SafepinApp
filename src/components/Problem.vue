@@ -10,7 +10,6 @@ import { EvaIcon } from 'vue-eva-icons'
 
 export default {
   name: "Problem",
-  data: {},
   components:{
    [EvaIcon.name]: EvaIcon
   },

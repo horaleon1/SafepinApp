@@ -1,6 +1,7 @@
 <template>
   <div>
-  <eva-icon name="heart" v-on:click="toUrl" class = "ok" height="60px" width ="60px"></eva-icon>
+  <eva-icon name="heart" class = "ok" height="60px" width ="60px"></eva-icon>
+  <!-- v-on:click="toUrl"  -->
   <h3>Estoy bien!</h3>
   </div>
 </template>
@@ -10,7 +11,6 @@ import { EvaIcon } from 'vue-eva-icons'
 
 export default {
   name: "Principal",
-  data: {},
   components:{
    [EvaIcon.name]: EvaIcon
   },
@@ -42,7 +42,7 @@ div{
   left: 24%;
   top: 1%;
   margin-top: 145px;
-  box-shadow: 0px 0px 6px;
+  box-shadow: 0px 0px 5px;
 }
 h3{
   color: white;
