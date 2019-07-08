@@ -1,5 +1,5 @@
 # SafepinApp
-# Proyecto Ganador del Hackaton interno Ironhack México Julio 2019
+# Proyecto Ganador del Hackathon interno Ironhack México Julio 2019
 
 ## Project setup
 ```
