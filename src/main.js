@@ -1,28 +1,28 @@
-import Vue from 'vue'
-import App from './App.vue'
+import Vue from "vue";
+import App from "./App.vue";
 // import vueResource from 'vue-resource'
-import VueRouter from 'vue-router'
-import Status from './components/Status'
-import Home from './components/Home.vue'
-import Navbar from './components/Navbar.vue'
-import Contacto from './components/Contacto.vue'
+import VueRouter from "vue-router";
+import Status from "./components/Status";
+import Home from "./components/Home.vue";
+import Navbar from "./components/Navbar.vue";
+import Contacto from "./components/Contacto.vue";
 
 const routes = [
-  {path: '/home',name:'Home',component:Home},
-  {path: '/status',name:'status',component:Status},
-  {path: '/navbar',name:'Navbar',component:Navbar},
-  {path: '/contacto',name:'Contacto',component:Contacto}
-]
+  { path: "/home", name: "Home", component: Home },
+  { path: "/status", name: "status", component: Status },
+  { path: "/navbar", name: "Navbar", component: Navbar },
+  { path: "/contacto", name: "Contacto", component: Contacto }
+];
 
-Vue.config.productionTip = false
+Vue.config.productionTip = false;
 // Vue.use(vueResource)
-Vue.use(VueRouter)
+Vue.use(VueRouter);
 
 const router = new VueRouter({
   routes
-})
+});
 
 new Vue({
   render: h => h(App),
   router
-}).$mount('#app')
+}).$mount("#app");

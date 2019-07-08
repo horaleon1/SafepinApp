@@ -1,22 +1,22 @@
 <template>
   <div>
     <div class="navbar">
-      <img src="../assets/logo.svg" alt width="35px" height="35px" />
+      <img src="../assets/logo.svg" alt width="35px" height="35px" class="logo" />
     </div>
-    <button class = "menu">
-        <router-link to="/navbar">
-          <img src="../assets/menu-2.svg" alt="Menu derecho" class="menuDerecho" />
-        </router-link>
-      </button>
+    <button class="menu">
+      <router-link to="/navbar">
+        <img src="../assets/menu-2.svg" alt="Menu derecho" class="menuDerecho" />
+      </router-link>
+    </button>
     <h1>¿Cual es tu estado actual?</h1>
     <button>
       <router-link to="/status">
         <div class="botonVerde">
           <eva-icon name="heart" class="ok" height="80px" width="80px"></eva-icon>
-          <h3 class="text">Estoy bien!</h3>
         </div>
       </router-link>
     </button>
+    <h3 class="text">Estoy bien!</h3>
     <button>
       <router-link to="/status">
         <div class="botonRojo">
@@ -90,7 +90,7 @@ img {
   background-color: #7bfdad;
   height: 200px;
   width: 200px;
-  box-shadow: 0px 0px 4px;
+  box-shadow: 0px -1px 5px black;
   margin-top: -430px;
   margin-left: -9px;
 }
@@ -99,7 +99,9 @@ img {
   font-size: 14px;
   text-decoration: none;
   font-weight: 500;
-  margin-top: 10px;
+  margin-top: 160px;
+  left: 42%;
+  position: absolute;
 }
 .text2 {
   color: white;
@@ -112,7 +114,7 @@ img {
   background-color: #fa4047;
   height: 200px;
   width: 200px;
-  box-shadow: 0px 0px 4px;
+  box-shadow: 0px -1px 5px black;
   margin-top: -190px;
   margin-left: -9px;
 }
@@ -123,12 +125,15 @@ button .link3 {
   font-size: 19px;
 }
 .menuDerecho {
- height: 35px;
- width: 35px;
+  height: 35px;
+  width: 35px;
 }
-.menu{
-  position:absolute;
+.menu {
+  position: absolute;
   left: 79%;
-  top:0.01%
+  top: 0.01%;
+}
+.logo {
+  margin-left: 155px;
 }
 </style>

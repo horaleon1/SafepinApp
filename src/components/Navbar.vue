@@ -1,8 +1,8 @@
 <template>
   <div class="principal">
     <div class="blanca">
-      <img src="../assets/user.png" alt="" class = "user">
-      <img src="../assets/more-vertical.svg" alt="" class = "puntos">
+      <img src="../assets/user.png" alt class="user" />
+      <img src="../assets/more-vertical.svg" alt class="puntos" />
       <h4>Nombre Apellido</h4>
       <ul>
         <li>Mapa</li>
@@ -40,29 +40,29 @@ export default {
   top: 0%;
   left: 0%;
 }
-.user{
+.user {
   height: 50px;
-  width:50px;
+  width: 50px;
   margin-left: 47%;
   margin-top: 10%;
 }
-.puntos{
+.puntos {
   margin-left: 28%;
-  margin-top: 7%
+  margin-top: 7%;
 }
-h4{
+h4 {
   margin-left: 31%;
-  color:#2F2E57;
+  color: #2f2e57;
   font-size: 22px;
-  margin-top:5%;
+  margin-top: 5%;
 }
 ul {
-margin-top: 20%;
-margin-left: 10%;
-list-style: none;
-color: #2F2E57;
+  margin-top: 20%;
+  margin-left: 10%;
+  list-style: none;
+  color: #2f2e57;
 }
-ul li{
-margin-top: 8%;
+ul li {
+  margin-top: 8%;
 }
 </style>
