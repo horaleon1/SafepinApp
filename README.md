@@ -1,4 +1,5 @@
-# tiembapp
+# SafepinApp
+# Proyecto Ganador del Hackaton interno Ironhack México Julio 2019
 
 ## Project setup
 ```
