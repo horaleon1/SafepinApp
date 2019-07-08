@@ -5,11 +5,13 @@ import VueRouter from 'vue-router'
 import Status from './components/Status'
 import Home from './components/Home.vue'
 import Navbar from './components/Navbar.vue'
+import Contacto from './components/Contacto.vue'
 
 const routes = [
   {path: '/home',name:'Home',component:Home},
   {path: '/status',name:'status',component:Status},
-  {path: '/navbar',name:'Navbar',component:Navbar}
+  {path: '/navbar',name:'Navbar',component:Navbar},
+  {path: '/contacto',name:'Contacto',component:Contacto}
 ]
 
 Vue.config.productionTip = false
