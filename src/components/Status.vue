@@ -1,29 +1,50 @@
 <template>
   <div>
-    <div class = "lightBar"></div>
+    <div class="navbar">
+      <img src="../assets/logo.svg" alt width="35px" height="35px" class="logo" />
+    </div>
+     <div class="lightBar">
+       <h4>+4 Personas de tu Grupo</h4>
+       <img src="../assets/circle-512.png" alt="" class = "usersCircle1">
+       <img src="../assets/circle-512.png" alt="" class = "usersCircle2">
+       <img src="../assets/circle-512.png" alt="" class = "usersCircle3">
+       <img src="../assets/circle-512.png" alt="" class = "usersCircle4">
+       
+     </div>
+    <img src="../assets/mapa1.png" alt class="mapa" />
+    <button class="menu">
+      <router-link to="/navbar">
+        <img src="../assets/menu-2.svg" alt="Menu derecho" class="menuDerecho" />
+      </router-link>
+    </button>
+   
     <img src="../assets/Grupo 135.png" class="globo" />
     <img src="../assets/Grupo 136.png" alt class="globo2" />
-    <img src="../assets/Grupo 137.png" alt class="globo3" /> 
+    <img src="../assets/Grupo 137.png" alt class="globo3" />
   </div>
 </template>
 
 <script>
 export default {
-  
+  name: "status"
 };
 </script>
 
 <style scoped>
-div {
-  background: url('../assets/mapa1.png')no-repeat;
-  background-size: cover;
-  height: 753px;
+.navbar {
+  height: 80px;
+  background-color: #3e4270;
+}
+.mapa {
+  height: 732px;
   width: 378px;
 }
 .lightBar{
- height: 70px;
+ height: 80px;
  width: 378px;
- background-color: blue;
+ background-color:#3E4270;
+ opacity: 0.45;
+ position: absolute;
 }
 .globo {
   height: 75px;
@@ -45,6 +66,45 @@ div {
   position: absolute;
   top: 70%;
   left: 60%;
+}
+.menu {
+  position: absolute;
+  left: 87%;
+  top: 3%;
+}
+.logo {
+  margin-left: 43%;
+}
+h4{
+  color:#fff;
+  font-size: 14px;
+  margin-top: 8.5%;
+  position: absolute;
+  left: 48%;
+}
+.usersCircle1{
+  height:40px;
+  widows: 40px;
+  margin-top:5%;
+  margin-left: 13%;
+}
+.usersCircle2{
+  height:40px;
+  widows: 40px;
+  margin-top:5%;
+  margin-left: -4%;
+}
+.usersCircle3{
+  height:40px;
+  widows: 40px;
+  margin-top:5%;
+  margin-left: -4%;
+}
+.usersCircle4{
+  height:40px;
+  widows: 40px;
+  margin-top:5%;
+  margin-left: -4%;
 }
 </style>
 

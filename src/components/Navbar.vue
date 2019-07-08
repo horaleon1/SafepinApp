@@ -1,54 +1,68 @@
 <template>
-<div class = "principal" >
-<!-- <img src="../assets/logo.svg" alt="Logo SafePin " class="img"> -->
-
-<!-- @click="sidebar = !sidebar" v-bind:class ="{sidebar:sidebar}" -->
-<div  class ="img2" @click="sidebar">
-</div>
-
- </div>
+  <div class="principal">
+    <div class="blanca">
+      <img src="../assets/user.png" alt="" class = "user">
+      <img src="../assets/more-vertical.svg" alt="" class = "puntos">
+      <h4>Nombre Apellido</h4>
+      <ul>
+        <li>Mapa</li>
+        <li>Grupo de Emergencia</li>
+        <li>Notificaciones</li>
+        <li>Numeros de Emergencia</li>
+        <li>Recomendaciones</li>
+      </ul>
+      <button>
+        <router-link to="/home">
+          <div class="gris"></div>
+        </router-link>
+      </button>
+    </div>
+  </div>
 </template>
 
 <script>
 export default {
-  name:'Navbar',
-  data (){
-   sidebar:false;
-  },
-  methods:{
-   sidebar(){
-    return this.background-color +white;
-   }
-  }
+  name: "Navbar"
 };
 </script>
 
 <style scoped>
-
-
-.img {
-  margin-top:2%;
-  margin-left: 2.5%;
-  height: 40px;
-  width: 40px;
-}
-.img2{
-  position:absolute;
-  left: 89%;
-  top: 3.5%;
-  background: url("../assets/menu-2.svg") no-repeat;
-  height: 45px;
-  width:45px;
-}
-
-div{
-  height: 65px;
-  background-color: #9d80ff;
+.blanca {
+  height: 812px;
   width: 100%;
+  background-color: #fff;
 }
- .sidebar{
-height: 812px;
-width:700px;
-background-color:white;
-} 
+.gris {
+  height: 812px;
+  background-color: lightgrey;
+  width: 10%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+}
+.user{
+  height: 50px;
+  width:50px;
+  margin-left: 47%;
+  margin-top: 10%;
+}
+.puntos{
+  margin-left: 28%;
+  margin-top: 7%
+}
+h4{
+  margin-left: 31%;
+  color:#2F2E57;
+  font-size: 22px;
+  margin-top:5%;
+}
+ul {
+margin-top: 20%;
+margin-left: 10%;
+list-style: none;
+color: #2F2E57;
+}
+ul li{
+margin-top: 8%;
+}
 </style>
