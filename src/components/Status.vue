@@ -28,12 +28,30 @@
 
     <img src="../assets/Grupo 136.png" alt class="globo2" />
     <img src="../assets/Grupo 137.png" alt class="globo3" />
+
+
+<!-- 
+    <button @click="modal = !modal" class = "prueba">hola</button>
+    <div class = "modal" v-if="modal">
+     <h3>modal</h3>
+    </div> -->
+
+
   </div>
+  
 </template>
 
 <script>
 export default {
-  name: "status"
+  name: "status",
+  data:{
+    modal:false,
+  },
+  methods: {
+    modalTrue: function(){
+      modal:true;
+    }
+  },
 };
 </script>
 
@@ -112,6 +130,14 @@ h4 {
   widows: 40px;
   margin-top: 5%;
   margin-left: -4%;
+}
+.modal{
+  height: 100px;
+  width:100px;
+}
+.prueba{
+  position:absolute;
+  top: 30%;
 }
 </style>
 

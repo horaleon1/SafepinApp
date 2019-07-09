@@ -1,5 +1,6 @@
 <template>
   <div class="principal">
+    <div class="todo"></div>
     <div class="cuadro">
       <div class="rojo"></div>
       <img src="../assets/images.png" alt class="user" />
@@ -41,11 +42,15 @@
           <span class="textRojo">tiene un problema</span>
         </h4>
       </div>
-      <div class = "botones">
-      <button class = "status">Ver Status</button>
-      <button class = "acudir">Acudir</button>
+      <div class="botones">
+        <button class="status">Ver Status</button>
+        <button class="acudir">Acudir</button>
       </div>
-      <button class = "help">¿Necesitas Ayuda?</button>
+      <button class="help">¿Necesitas Ayuda?</button>
+
+      <router-link to="/status">
+        <button class="regresar">Regresar</button>
+      </router-link>
     </div>
   </div>
 </template>
@@ -61,11 +66,15 @@ export default {
 
  <style scoped>
 .principal {
-  background-color: #b4b0b0;
   width: 378px;
   height: 812px;
 }
-
+.todo {
+  background-color: #b4b0b0;
+  opacity: 0.3;
+  width: 100%;
+  height: 100%;
+}
 .cuadro {
   background-color: #ffffff;
   width: 90%;
@@ -161,33 +170,39 @@ ul li {
   color: #fa4047;
   line-height: 15px;
 }
-.botones{
-margin-left: 4%;
-margin-top: 5%;
+.botones {
+  margin-left: 4%;
+  margin-top: 5%;
 }
-.status{
-border: 1px solid #2f2e57;
-background-color: #ffffff;
-border-radius: 3px;
-width: 140px;
-height: 40px;
-letter-spacing: 1px;
+.status {
+  border: 1px solid #2f2e57;
+  background-color: #ffffff;
+  border-radius: 3px;
+  width: 140px;
+  height: 40px;
+  letter-spacing: 1px;
 }
-.acudir{
-border: 1px solid #2f2e57;
-background-color: #2f2e57;
-border-radius: 3px;
-color:#ffffff;
-width: 140px;
-height: 40px;
-margin-left: 5%;
-letter-spacing: 1px;
+.acudir {
+  border: 1px solid #2f2e57;
+  background-color: #2f2e57;
+  border-radius: 3px;
+  color: #ffffff;
+  width: 140px;
+  height: 40px;
+  margin-left: 5%;
+  letter-spacing: 1px;
 }
-.help{
-  color:#ffffff;
+.help {
+  color: #ffffff;
   text-decoration: underline;
   margin-top: 10%;
   margin-left: 25%;
+}
+.regresar {
+  color: #ffffff;
+  text-decoration: underline;
+  margin-top: 15%;
+  margin-left: 35%;
 }
 </style>
  
